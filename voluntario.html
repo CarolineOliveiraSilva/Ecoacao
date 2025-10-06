@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de voluntáriado EcoAção</title>
+</head>
+<body>
+        <header>
+            <img src="imagens/logo2.png" alt="olha com mapa do brasil verde dentro de um circulo logo da EcoAção" width="300px">
+            <h1>Formulário de Inscrição para Voluntariado – EcoAção</h1>
+            <p>Bem-vindo(a) à equipe que semeia o futuro! Agradecemos seu interesse em dedicar seu tempo e energia à nossa causa. Suas respostas nos ajudarão a conhecer você melhor.</p>
+        </header>
+
+        <main>
+            <form action="#" method="post">
+                <fieldset>
+
+                    <legend>Informações Pessoais</legend>
+
+                    <p>
+                    <label for="Nome">Nome Completo:</label>
+                    <input type="text" id="Nome" name="Nomecompleto" required><br>
+                    </p>
+                     
+                    <p>
+                    <label for="Nome">Data de Nascimento:</label>
+                    <input type="date" id="date" name="data_de_nascimento" required><br>
+                    </p>
+
+                    <p>
+                    <label for="Nome">E-mail:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    </p>
+
+                    <p>
+                    <label for="Nome">Telefone para contato:</label>
+                    <input type="tel" id="tel" name="telefone" placeholder="(33) 3333x4444" required><br>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Sua Disponibilidade</legend>
+                    <p><strong>Quais dias da semana você tem disponibilidade?</strong></p>
+
+                    <div>
+                        <input type="checkbox" id="diasdasemana" name="Disponibilidade_dias[]" value="dias_dasemana">
+                        <label for="diasdasemana">Dias de Semana (segunda a sexta)</label>
+                    </div>
+                     <div>
+                        <input type="checkbox" id="finaisesemana" name="Disponibilidade_dias[]" value="finais_desemana">
+                        <label for="finaisdesemana">Finas de Semana (sabádo ou domingo)</label>
+                    </div>
+
+                    <p><strong>Em quais periodos?</p></strong>
+
+                    <div>
+                        <input type="radio" id="manha" name="periodo" value="manha">
+                        <label for="manha">Manhã</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="tarde" name="periodo" value="tarde">
+                        <label for="tarde">Tarde</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="noite" name="periodo" value="noite">
+                        <label for="noite">Noite</label>
+                    </div>
+                </fieldset>
+
+             <p><button type="submit"><strong>Enviar</strong></button></p>
+            </form>
+        </main>
+        <footer>
+            <p><strong>Obrigado por querer fazer a diferença conosco</strong></p>
+
+
+        </footer>
+
+</body>
+</html>
