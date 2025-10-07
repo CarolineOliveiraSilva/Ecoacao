@@ -6,6 +6,51 @@
     <title>Contatos</title>
 </head>
 <body>
-    <h1>contato</h1>
+    
+    <header>
+        <h1>Fale Conosco: Conecte-se com a EcoAção!</h1>
+
+        <h2>Tem uma pergunta, uma ideia, ou quer se juntar à nossa causa? Seja para tirar dúvidas, propor uma parceria, oferecer-se como voluntário ou entrar em contato com a imprensa, estamos prontos para ouvir você!</h2>
+    </header>
+
+    <main>
+            <h2>Envie sua mensagem direta</h2>
+            <p>A forma mais rápida de nos enviar uma mensagem é através do nosso formulário. Preencha os campos abaixo e entraremos em contato o mais breve possível</p>
+            <section>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Formulário de Contato</legend>
+
+                        <p>
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome aqui" required><br>
+                        </p>
+
+                        <p>
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" placeholder="seuemail@email.com" required><br>
+                        </p>
+
+                        <p>
+                            <label for="assuntos">Assuntos</label>
+                            <select name="assuntos" id="assuntos" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="voluntario">Voluntário</option>
+                            <option value="doacao">Doações</option>
+                            <option value="parceria">Parceria</option>
+                            <option value="Projetos">Projetos</option>
+                            <option value="gerais">Outros</option>
+                            </select>
+                        </p>
+
+                        <br><label for="mensagem">Escreva sua mensagem</label><br>
+                        <textarea name="mensagem" id="mensagem" rows="6" placeholder="Escreva sua Mensagem aqui." required></textarea><br>
+                        <button type="submit">Enviar mensagem</button>
+                        </section>
+                    </fieldset>
+                </form>
+            </section>
+       
+    </main>
 </body>
 </html>
