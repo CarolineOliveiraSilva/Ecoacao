@@ -7,7 +7,7 @@ const cepInput=document.getElementById('cep');
 cepInput.addEventListener('blur', async() => {
 
     //remove caracteres não numericos
-    const cep = cepInput.value.replace(/\D/g, '');
+    const cep = cepInput.value.replace(/\D/g,'');
 
     if(cep.length !== 8){
         alert("CEP INVÁLIDO.Por favor, digite 8 números.");

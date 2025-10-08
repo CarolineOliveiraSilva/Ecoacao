@@ -51,7 +51,10 @@
                     <P>
                     <label for="Nome">Telefone para contato:</label>
                     <input type="tel" id="tel" name="telefone" placeholder="(33) 3333x4444" required><br>
+                   <input type="checkbox">
+                   <label for="mensagem">Deseja receber msg no Whast</label>
                     </p>
+
 
                 </fieldset>
 
@@ -59,7 +62,7 @@
                     <legend>Endereço</legend>
                     <p>
                         <label for="cep">Cep:</label>
-                        <input type="text" id="cep" name="cep"  placeholder="Apenas números" required maxlength="8">
+                        <input type="text" id="cep" name="cep"  placeholder="Apenas números" required maxlength="9" autocomplete="postal-code">
                     </p>
 
                     <p>
@@ -83,6 +86,11 @@
                         <label for="uf">Estado:</label>
                         <input type="text" name="estado" id="uf" required>
                     </p>
+                    <div>
+                        <input type="checkbox" id="terno">
+                        <label for="terno">Aceito receber folhetos da ong em meu endereço(sem custos)</label>
+                        
+                    </div>
 
                    
                 </fieldset>
@@ -115,6 +123,8 @@
                         <input type="radio" id="noite" name="periodo" value="noite">
                         <label for="noite">Noite</label>
                     </div>
+
+                    
                 </fieldset>
 
              <p><button type="submit"><strong>Enviar</strong></button></p>
